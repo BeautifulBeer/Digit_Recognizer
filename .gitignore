@@ -1,3 +1,4 @@
 .ipynb_checkpoints/
 data/
 digit-recognizer/
+__pycache__/
