@@ -5,7 +5,6 @@
 
 
 import torch
-import pandas as pd
 import os
 from torch.utils.data import Dataset
 
@@ -14,9 +13,9 @@ from torch.utils.data import Dataset
 
 
 class DigitDataset(Dataset):
-    def __init__(self, csv_path, phase='training'):
-        csv_file = pd.read_csv(csv_path)
-        raw_tensor = torch.tensor(csv_file.values)
+    def __init__(self, csv_data, phase='training'):
+        self.csv_data = csv_data
+        raw_tensor = torch.tensor(csv_data.values)
         print(len(raw_tensor))
         self.phase = phase
         if self.phase == 'training':
