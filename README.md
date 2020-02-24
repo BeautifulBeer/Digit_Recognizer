@@ -1,2 +1,6 @@
-# kaggle_digit_recognizer
-Kaggle Competition, "Digit Recognizer" with Pytorch
+# Overview
+
+This repository impelements classifier of digit for kaggle competition, "Digit Recognizer" with Pytorch.
+
+Link : https://www.kaggle.com/c/digit-recognizer
+
