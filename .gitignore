@@ -2,3 +2,5 @@
 data/
 digit-recognizer/
 __pycache__/
+*.csv
+*.pth

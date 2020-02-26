@@ -7,10 +7,9 @@
 import torch
 import os
 from torch.utils.data import Dataset
-import torchvision
 
 
-# In[43]:
+# In[2]:
 
 
 class DigitDataset(Dataset):
@@ -31,24 +30,6 @@ class DigitDataset(Dataset):
         if self.phase == 'training':
             return self.transform(self.data[idx]), self.labels[idx]
         if self.phase == 'testing':
-            return self.transform(self.data[idx])
+            return self.transform(self.data[idx]), (idx+1)
         
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
 
